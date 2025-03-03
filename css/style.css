@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --redBnb: #ff385c;
+  --green: #00a506;
+}
+
+.btn-custom {
+  background-color: var(--redBnb) !important;
+}
+
+.header-title {
+  color: var(--redBnb);
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.header-paragraph {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.input-color {
+  accent-color: black;
+}
+
+.header-button {
+  width: 400px;
+  height: 64px;
+  border: 1px solid black;
+  border-radius: 40px;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.custom-icon {
+  font-size: 20px;
+}
+
+@media (min-width: 600px) {
+  .map-container {
+    height: 358px;
+    width: 100%;
+  }
+
+  .header-title {
+    font-size: 44px;
+  }
+
+  .header-paragraph {
+    font-size: 35px;
+  }
+}
