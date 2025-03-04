@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-  </head>
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
+<title>Document</title>
+</head>
+
 <body>
 
     <nav class="container p-4 d-flex justify-content-between align-items-center ">
-        <div class="logo"> <div class="image-logo"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Homepage di Airbnb" role="img" focusable="false" style="display: block; height: 32px; width: 32px; fill:#FF385C;"><path d="M16 1c2 0 3.46.96 4.75 3.27l.53 1.02a424.58 424.58 0 0 1 7.1 14.84l.15.35c.67 1.6.9 2.48.96 3.4v.41l.01.23c0 4.06-2.88 6.48-6.36 6.48-2.22 0-4.55-1.26-6.7-3.39l-.26-.26-.17-.17h-.02l-.17.18c-2.05 2.1-4.27 3.42-6.42 3.62l-.28.01-.26.01c-3.48 0-6.36-2.42-6.36-6.48v-.47c.03-.93.23-1.77.83-3.24l.22-.53c.97-2.3 6.08-12.98 7.7-16.03C12.55 1.96 14 1 16 1zm0 2c-1.24 0-2.05.54-2.99 2.21l-.52 1a422.57 422.57 0 0 0-7.03 14.7l-.35.84a6.86 6.86 0 0 0-.6 2.24l-.01.33v.2C4.5 27.4 6.41 29 8.86 29c1.77 0 3.87-1.24 5.83-3.35-2.3-2.94-3.86-6.45-3.86-8.91 0-2.92 1.94-5.39 5.18-5.42 3.22.03 5.16 2.5 5.16 5.42 0 2.45-1.56 5.96-3.86 8.9 1.97 2.13 4.06 3.36 5.83 3.36 2.45 0 4.36-1.6 4.36-4.48v-.4a7.07 7.07 0 0 0-.72-2.63l-.25-.6C25.47 18.41 20.54 8.12 19 5.23 18.05 3.53 17.24 3 16 3zm.01 10.32c-2.01.02-3.18 1.51-3.18 3.42 0 1.8 1.18 4.58 2.96 7.04l.2.29.18-.24c1.73-2.38 2.9-5.06 3-6.87v-.22c0-1.9-1.17-3.4-3.16-3.42z"></path></svg></div></div>
+        <div class="logo">
+            <div class="image-logo"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                    aria-label="Homepage di Airbnb" role="img" focusable="false"
+                    style="display: block; height: 32px; width: 32px; fill:#FF385C;">
+                    <path
+                        d="M16 1c2 0 3.46.96 4.75 3.27l.53 1.02a424.58 424.58 0 0 1 7.1 14.84l.15.35c.67 1.6.9 2.48.96 3.4v.41l.01.23c0 4.06-2.88 6.48-6.36 6.48-2.22 0-4.55-1.26-6.7-3.39l-.26-.26-.17-.17h-.02l-.17.18c-2.05 2.1-4.27 3.42-6.42 3.62l-.28.01-.26.01c-3.48 0-6.36-2.42-6.36-6.48v-.47c.03-.93.23-1.77.83-3.24l.22-.53c.97-2.3 6.08-12.98 7.7-16.03C12.55 1.96 14 1 16 1zm0 2c-1.24 0-2.05.54-2.99 2.21l-.52 1a422.57 422.57 0 0 0-7.03 14.7l-.35.84a6.86 6.86 0 0 0-.6 2.24l-.01.33v.2C4.5 27.4 6.41 29 8.86 29c1.77 0 3.87-1.24 5.83-3.35-2.3-2.94-3.86-6.45-3.86-8.91 0-2.92 1.94-5.39 5.18-5.42 3.22.03 5.16 2.5 5.16 5.42 0 2.45-1.56 5.96-3.86 8.9 1.97 2.13 4.06 3.36 5.83 3.36 2.45 0 4.36-1.6 4.36-4.48v-.4a7.07 7.07 0 0 0-.72-2.63l-.25-.6C25.47 18.41 20.54 8.12 19 5.23 18.05 3.53 17.24 3 16 3zm.01 10.32c-2.01.02-3.18 1.51-3.18 3.42 0 1.8 1.18 4.58 2.96 7.04l.2.29.18-.24c1.73-2.38 2.9-5.06 3-6.87v-.22c0-1.9-1.17-3.4-3.16-3.42z">
+                    </path>
+                </svg></div>
+        </div>
         <div class="link-bnb d-flex gap-4 align-items-center d-none d-md-flex">
             <p class="text-nowrap m-0">Vuoi aprire un Airbnb</p>
             <button class="btn btn-custom p-2 w-100 h-75">
@@ -24,51 +36,192 @@
         </div>
     </nav>
 
-     <header>
-    <div class="container">
-        <div class="row">
-            <div class="col-12  col-lg-6">
-                <div class="d-flex flex-column align-items-center gap-2 ">
-                    <h1 class="header-title m-0">Apri un Airbnb.</h1>
-                    <p class="m-0 text-nowrap header-paragraph text-center lh-1">Potresti  guadagnare
-                        
-                        
-                    </p>
-                        <p class="fw-bold m-0 header-paragraph">1.486€</p> 
-                    <div class="d-flex flex-column align-items-center gap-4">
-                        <p class="m-0"> <a class="text-black " href="#">7 notti</a> a una tariffa stimata di 212 € a notte</p>
-                        <input class="w-100  input-color" type="range">
-                        <div class="text-center">
-                            <a class="text-black" href="#">Scopri come stimiamo i tuoi guadagni</a>
+    <header class="d-flex justify-content-center">
+        <div class="container">
+            <div class="row gy-2">
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex flex-column align-items-center gap-3 gap-lg-2">
+                        <h1 class="header-title m-0">Apri un Airbnb.</h1>
+                        <p class="m-0 text-nowrap header-paragraph text-center lh-1">Potresti guadagnare
+                        </p>
+                        <p class="fw-bold m-0 header-paragraph">1.486€</p>
+                        <div class="d-flex flex-column align-items-center gap-4">
+                            <p class="m-0"> <a class="text-black " href="#">7 notti</a> a una tariffa stimata di 212 € a
+                                notte</p>
+                            <input class="w-100  input-color" type="range">
+                            <div class="text-center">
+                                <a class="text-black" href="#">Scopri come stimiamo i tuoi guadagni</a>
+                            </div>
+
                         </div>
-                        
+                        <button
+                            class="header-button d-flex mb-lg-5 justify-content-start align-items-center gap-3 py-3 mb-2">
+                            <ion-icon class="custom-icon ms-2" name="search-outline"></ion-icon>
+                            <div class="d-flex flex-column align-items-start justify-content-center pt-3">
+                                <p class="m-0 text-start fw-bolder lh-1">Roma</p>
+                                <p class="fw-light">Alloggio intero·2 camere da letto</p>
+                            </div>
+                        </button>
                     </div>
-                    <button class=" header-button d-flex mb-lg-5 justify-content-start align-items-center gap-3 mt-3">
-                        <ion-icon class="custom-icon ms-2" name="search-outline"></ion-icon>
-                        <div class="d-flex flex-column align-content-center ">
-                            <p class="m-0 mt-2 text-start fw-bolder lh-1">Roma</p>
-                            <p class="fw-light" >Alloggio intero·2 camere da letto</p>
-                        </div>
-                    </button>
+
                 </div>
-           
+                <div class="col-12 col-lg-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.9763556256107!2d12.474818577256146!3d41.87185516580339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6173fb8c8ea7%3A0x1a413c9507f97391!2sEPICODE!5e0!3m2!1sit!2sit!4v1741028214399!5m2!1sit!2sit"
+                        class="map-container w-100 h-100" style="border:0; border-radius: 10px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
         </div>
-        <div class="col-12  col-lg-6">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.9763556256107!2d12.474818577256146!3d41.87185516580339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6173fb8c8ea7%3A0x1a413c9507f97391!2sEPICODE!5e0!3m2!1sit!2sit!4v1741028214399!5m2!1sit!2sit" class="map-container w-100 h-100" style="border:0; border-radius: 0 0 10px 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div> 
-
-    </div>
-</div>
-
     </header>
-     
+    <main>
+        <section class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center fw-bold w-75 my-0 mx-auto">E' facile affittare il tuo alloggio su Aribnb</h2>
+                        <div class="py-3">
+                                <img srcset="https://a0.muscache.com/im/pictures/canvas/Canvas-1727297645681/original/d1116c3b-9b75-4691-a2e3-705c62d99e2c.jpeg?im_w=720&im_format=avif 425w, https://a0.muscache.com/im/pictures/canvas/Canvas-1727296580025/original/57c37b31-ddf8-40ab-9552-c21b0a6809f6.jpeg?im_w=1920&im_format=avif 570w" sizes="(min-width: 600px) 570w,425w" class="img-fluid"
+                                    src="https://a0.muscache.com/im/pictures/canvas/Canvas-1727297645681/original/d1116c3b-9b75-4691-a2e3-705c62d99e2c.jpeg?im_w=720&im_format=avif"
+                                    alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="d-flex flex-row flex-md-column align-items-center py-2 gap-2">
+                            <div class="aribnb-start d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                    style="display:block;height:20px;width:20px;fill:currentColor" aria-hidden="true"
+                                    role="presentation" focusable="false">
+                                    <path
+                                        d="m17.98 1.9.14.14 13.25 13.25-1.41 1.42-.96-.96v12.58a2 2 0 0 1-1.85 2H5a2 2 0 0 1-2-1.85V15.75l-.96.96-1.41-1.42L13.88 2.04a3 3 0 0 1 4.1-.13zm-2.6 1.47-.09.08L5 13.75 5 28.33h6v-10a2 2 0 0 1 1.85-2H19a2 2 0 0 1 2 1.85v10.15h6V13.75L16.7 3.45a1 1 0 0 0-1.31-.08zM19 18.33h-6v10h6z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="d-flex align-items-center aribnb-p-container">
+                                <p class="mb-0">Crea un annuncio per il tuo alloggio in
+                                    pochi passaggi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
 
+                    </div>
+                    <div class="col-12 col-lg-4">
 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <footer class="footer-section py-5">
+        <section class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 d-flex flex-column align-items-start">
+                        <h3>Assistenza</h3>
+                        <ul class="d-flex flex-column aligns-item-start px-0">
+                            <li class="pb-1"><a href="#">Centro Assistenza</a></li>
+                            <li class="py-1"><a href="#">AirCover</a></li>
+                            <li class="py-1"><a href="#">Antidiscriminazione</a></li>
+                            <li class="py-1"><a href="#">Supporto alla disabilità</a></li>
+                            <li class="py-1"><a href="#">Opzioni di cancellazione</a></li>
+                            <li class="py-1"><a href="#">Segnala problema nel quartiere</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4 d-flex flex-column align-item-start">
+                        <h3>Ospitare</h3>
+                        <ul class="d-flex flex-column align-item-start px-0">
+                            <li class="pb-1"><a href="#">Apri un Airbnb</a></li>
+                            <li class="py-1"><a href="#">AirCover per gli host</a></li>
+                            <li class="py-1"><a href="#" class="py-1">Risorse per gli host</a></li>
+                            <li class="py-1"><a href="#" class="py-1">Forum della community</a></li>
+                            <li class="py-1"><a href="#" class="py-1">Ospitare responsabilmente</a></li>
+                            <li class="py-1"><a href="#" class="py-1">Partecipa a una lezione gratuità
+                                    sull'ospitalità</a></li>
+                            <li class="py-1"><a href="#" class="py-1">Trova un co-host</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4 d-flex flex-column align-item-start">
+                        <h3>Airbnb</h3>
+                        <ul class="d-flex flex-column align-item-start px-0">
+                            <li class="pb-1"><a href="#" class="">Newsroom</a></li>
+                            <li class="py-1"><a href="#" class="py-1">Nuove funzionalità</a></li>
+                            <li class="py-1"><a href="#" class="py-1">Opportunità di lavoro</a></li>
+                            <li class="py-1"><a href="#" class="py-1">Investitori</a></li>
+                            <li class="py-1"><a href="#" class="py-1">Gift card</a></li>
+                            <li class="py-1"><a href="#" class="py-1">Soggiorni con Airbnb.org</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-info py-1">
+            <div class="container d-flex justify-content-between">
+                <div class="d-flex align-items-start">
+                    <p>© 2025 Airbnb, Inc.</p>
+                    <div>
+                        <ol class="d-flex gap-2 align-item-start">
+                            <li><span class="pe-2">·</span><a href="#"></a>Privacy</li>
+                            <li><span class="pe-2">·</span><a href="#"></a>Termini</li>
+                            <li><span class="pe-2">·</span><a href="#"></a>Mappa del sito</li>
+                            <li><span class="pe-2">·</span><a href="#"></a>Dettagli dell'azienda</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation"
+                        focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                        <path
+                            d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26 6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83 5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95 12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z">
+                        </path>
+                    </svg>
+                    <a href="#">Italiano (IT)</a>
+                    <a href="#">€ Eur</a>
+                    <ul class="d-flex gap-2">
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                    aria-label="Visita Facebook" role="img" focusable="false"
+                                    style="display: block; height: 18px; width: 18px; fill: currentcolor;">
+                                    <path d="M30 0a2 2 0 0 1 2 2v28a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M22.94 16H18.5v-3c0-1.27.62-2.5 2.6-2.5h2.02V6.56s-1.83-.31-3.58-.31c-3.65 0-6.04 2.21-6.04 6.22V16H9.44v4.62h4.06V32h5V20.62h3.73z">
+                                    </path>
+                                </svg></a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                    aria-label="Visita Twitter" role="img" focusable="false"
+                                    style="display: block; height: 18px; width: 18px; fill: currentcolor;">
+                                    <path d="M32 4v24a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M18.66 7.99a4.5 4.5 0 0 0-2.28 4.88A12.31 12.31 0 0 1 7.3 8.25a4.25 4.25 0 0 0 1.38 5.88c-.69 0-1.38-.13-2-.44a4.54 4.54 0 0 0 3.5 4.31 4.3 4.3 0 0 1-2 .06 4.64 4.64 0 0 0 4.19 3.13A8.33 8.33 0 0 1 5.8 23a12.44 12.44 0 0 0 19.32-11.19A7.72 7.72 0 0 0 27.3 9.5a8.3 8.3 0 0 1-2.5.75 4.7 4.7 0 0 0 2-2.5c-.87.5-1.81.87-2.81 1.06a4.5 4.5 0 0 0-5.34-.83z">
+                                    </path>
+                                </svg></a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                    aria-label="Visita Instagram" role="img" focusable="false"
+                                    style="display: block; height: 18px; width: 18px; fill: currentcolor;">
+                                    <path d="M30 0H2a2 2 0 0 0-2 2v28c0 1.1.9 2 2 2h28a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M15.71 4h1.25c2.4 0 2.85.02 3.99.07 1.28.06 2.15.26 2.91.56.79.3 1.46.72 2.13 1.38.6.6 1.08 1.33 1.38 2.13l.02.06c.28.74.48 1.58.54 2.8l.01.4c.05 1.02.06 1.63.06 4.4v.92c0 2.6-.02 3.05-.07 4.23a8.78 8.78 0 0 1-.56 2.91c-.3.8-.77 1.53-1.38 2.13a5.88 5.88 0 0 1-2.13 1.38l-.06.02c-.74.28-1.59.48-2.8.53l-.4.02c-1.02.05-1.63.06-4.4.06h-.92a73.1 73.1 0 0 1-4.23-.07 8.78 8.78 0 0 1-2.91-.56c-.8-.3-1.53-.77-2.13-1.38a5.88 5.88 0 0 1-1.38-2.13l-.02-.06a8.84 8.84 0 0 1-.54-2.8l-.01-.37A84.75 84.75 0 0 1 4 16.29v-1c0-2.62.02-3.06.07-4.24.06-1.26.26-2.13.55-2.88l.01-.03c.3-.8.77-1.53 1.38-2.13a5.88 5.88 0 0 1 2.13-1.38l.06-.02a8.84 8.84 0 0 1 2.8-.54l.37-.01C12.39 4 12.99 4 15.71 4zm.91 2.16h-1.24c-2.3 0-2.91.01-3.81.05l-.42.02c-1.17.05-1.8.25-2.23.41-.56.22-.96.48-1.38.9-.4.41-.67.8-.88 1.35l-.03.06a6.7 6.7 0 0 0-.4 2.2l-.02.45c-.04.9-.05 1.53-.05 3.94v1.08c0 2.64.02 3.05.07 4.23v.07c.06 1.13.25 1.74.42 2.16.21.56.47.96.9 1.38.4.4.8.67 1.34.88l.06.03a6.7 6.7 0 0 0 2.2.4l.45.02c.9.04 1.53.05 3.94.05h1.08c2.64 0 3.05-.02 4.23-.07h.07a6.51 6.51 0 0 0 2.16-.42c.52-.19.99-.5 1.38-.9.4-.4.67-.8.88-1.34l.03-.06a6.7 6.7 0 0 0 .4-2.2l.02-.45c.04-.9.05-1.53.05-3.94v-1.09c0-2.63-.02-3.04-.07-4.22v-.07a6.51 6.51 0 0 0-.42-2.16c-.19-.52-.5-.99-.9-1.38a3.7 3.7 0 0 0-1.34-.88l-.06-.03a6.63 6.63 0 0 0-2.16-.4l-.46-.02c-.9-.04-1.5-.05-3.8-.05zM16 9.84a6.16 6.16 0 1 1 0 12.32 6.16 6.16 0 0 1 0-12.32zM16 12a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm6.4-3.85a1.44 1.44 0 1 1 0 2.88 1.44 1.44 0 0 1 0-2.88z">
+                                    </path>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
