@@ -46,6 +46,38 @@
 
 main h2{
   font-size: 44px;
+  font-weight: 800;
+}
+
+@media (max-width: 1024px) {
+  main h2{
+    width: 50%;
+  }
+
+  .aribnb-p-container{
+    font-size: 14px;
+    text-align: center;
+    width: 210px;
+  }
+
+  .btn-airbnb-start{
+    border-radius: 20px !important;
+    padding: 10px 80px 10px 80px !important;
+  }
+
+}
+
+@media (max-width: 780px) {
+  main h2{
+    width: 75%;
+  }
+
+  .aribnb-p-container{
+    font-size: 14px;
+    text-align: center;
+    width: 210px;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -64,11 +96,9 @@ main h2{
 
   main h2{
     font-size: 32px;
+    width: 100%;
   }
 
-  /* .custom-3x4{
-    --bs-aspect-ratio: 133.3333333333%;
-  } */
   .img-container{
     position: relative;
     width: 100%;
@@ -79,6 +109,12 @@ main h2{
     top: 0;
     left: 0;
     clip: rect(200px 200px 200px 200px);
+  }
+
+  .aribnb-p-container{
+    font-size: 16px;
+    text-align: start;
+    width: 100%;
   }
 }
 
@@ -91,10 +127,6 @@ main h2{
 
 .aribnb-p-container{
   height: 48px;
-}
-
-.custom-container{
-  height: 300px;
 }
 
 footer {
