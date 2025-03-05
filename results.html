@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/results.css">
     <title>AirB&b</title>
 </head>
 <body>
-    <nav>
+    <!-- GESTIRE MOBILE / GRAFICA SEARCH-BUTTONS -->
+    <nav class="mb-3">
         <div class="container-fluid d-flex justify-content-between align-items-center p-4">
             <div>
                 <img 
-                src="https://cdn.discordapp.com/attachments/1346201439902367814/1346209751054286990/image.png?ex=67c75b08&is=67c60988&hm=94a8ab79444019e8b3d757d2c16207bb04457f34dca219d2082e603254311449&" 
-                alt="air-bnb-logo" 
+                src="./assets/airbnb-logo.png" 
+                alt="airbnb-logo" 
                 class="logo">
             </div>
-            <div class="search-info">
-                <div class="btn-group" role="group" aria-label="Basic example" id="navbar-search-info">
-                    <button type="button" class="btn">Ovunque</button>
-                    <button type="button" class="btn">Qualunque settimana</button>
-                    <button type="button" class="btn">Aggiungi ospiti
+            <div class="search-info d-flex align-items-center">
+                <button type="button" class="btn px-3 fw-bold">Ovunque</button>
+                <button type="button" class="btn px-3 fw-bold">Qualunque settimana</button>
+                <button type="button" class="btn fw-light">
+                    <span class="search-btn me-2">
                         Aggiungi ospiti
-                        <span class="btn search-btn">
-                            <i class="bi bi-search"></i>
-                        </span>
-                    </button>
-                </div>
+                    </span>
+                    <i class="bi bi-search"></i>
+                </button>
             </div>
             <div class="d-flex align-items-center gap-3">
                 <button class="btn nav-btn fw-bold">Affitta con Airbnb</button>
@@ -40,14 +40,568 @@
 
     </nav>
 
-    <header>
-
+    <!-- SISTEMARE GRAFICA E GESTIRE MOBILE -->
+    <header class="container-fluid mb-3">
+        <div class="row">
+            <div class="col-11">
+                <div class="swiper h-100">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="banner-icon bi bi-houses"></i>
+                                <p class="fw-bold text-center">Baite</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="banner-icon bi bi-houses"></i>
+                                <p class="fw-bold text-center">Icone</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="banner-icon bi bi-houses"></i>
+                                <p class="fw-bold text-center">Vista mozzafiato</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="banner-icon bi bi-houses"></i>
+                                <p class="fw-bold text-center">Wow!</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="banner-icon bi bi-houses"></i>
+                                <p class="fw-bold text-center">Minicase</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="banner-icon bi bi-houses"></i>
+                                <p class="fw-bold text-center">Surf</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="banner-icon bi bi-houses"></i>
+                                <p class="fw-bold text-center">Sulle piste</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="banner-icon bi bi-houses"></i>
+                                <p class="fw-bold text-center">Case sull'albero</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="banner-icon bi bi-houses"></i>
+                                <p class="fw-bold text-center">Cupole</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="banner-icon bi bi-houses"></i>
+                                <p class="fw-bold text-center">Ville</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="banner-icon bi bi-houses"></i>
+                                <p class="fw-bold text-center">Campagna</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="banner-icon bi bi-houses"></i>
+                                <p class="fw-bold text-center">Sull'acqua</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="banner-icon bi bi-houses"></i>
+                                <p class="fw-bold text-center">Luoghi remoti</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="banner-icon bi bi-houses"></i>
+                                <p class="fw-bold text-center">Castelli</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="banner-icon bi bi-houses"></i>
+                                <p class="fw-bold text-center">Lago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <button class="btn h-75 px-3" id="banner-filter">
+                        <i class="bi bi-sliders"></i>
+                        <span>Filtri</span>
+                    </button>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
 
         <section id="results">
+            <div class="container-fluid">
+                <div class="row gy-3 rooms-container">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="room-card">
+                            <div class="swiper card-images rounded rounded-3 overflow-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            
+                            <div class="room-info pt-2 pb-0 px-1 mb-0">
+                                <div class="d-flex justify-content-between align-items-center pb-0 mb-0">
+                                    <h4 class="room-title mb-0">San Salvatore Monferrato, Italia</h4>
+                                    <p class="room-rating mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        4.9
+                                    </p>
+                                </div>
+                                <p class="room-host mb-0">Host: Mauro</p>
+                                <p class="room-book-dates mb-2">31 gen - 05 feb</p>
+                                <p class="price fw-bold">188 € notte</p>
+                            </div>
+                            <input type="hidden" name="room-id" value="0">
+                        </div>
+                    </div>
 
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="room-card">
+                            <div class="room-preview rounded rounded-3 overflow-hidden">
+                                <div class="swiper card-images">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="room-info pt-2 pb-0 px-1 mb-0">
+                                <div class="d-flex justify-content-between align-items-center pb-0 mb-0">
+                                    <h4 class="room-title mb-0">San Salvatore Monferrato, Italia</h4>
+                                    <p class="room-rating mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        4.9
+                                    </p>
+                                </div>
+                                <p class="room-host mb-0">Host: Mauro</p>
+                                <p class="room-book-dates mb-2">31 gen - 05 feb</p>
+                                <p class="price fw-bold">188 € notte</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="room-card">
+                            <div class="room-preview rounded rounded-3 overflow-hidden">
+                                <div class="swiper card-images">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="room-info pt-2 pb-0 px-1 mb-0">
+                                <div class="d-flex justify-content-between align-items-center pb-0 mb-0">
+                                    <h4 class="room-title mb-0">San Salvatore Monferrato, Italia</h4>
+                                    <p class="room-rating mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        4.9
+                                    </p>
+                                </div>
+                                <p class="room-host mb-0">Host: Mauro</p>
+                                <p class="room-book-dates mb-2">31 gen - 05 feb</p>
+                                <p class="price fw-bold">188 € notte</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="room-card">
+                            <div class="room-preview rounded rounded-3 overflow-hidden">
+                                <div class="swiper card-images">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="room-info pt-2 pb-0 px-1 mb-0">
+                                <div class="d-flex justify-content-between align-items-center pb-0 mb-0">
+                                    <h4 class="room-title mb-0">San Salvatore Monferrato, Italia</h4>
+                                    <p class="room-rating mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        4.9
+                                    </p>
+                                </div>
+                                <p class="room-host mb-0">Host: Mauro</p>
+                                <p class="room-book-dates mb-2">31 gen - 05 feb</p>
+                                <p class="price fw-bold">188 € notte</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="room-card">
+                            <div class="room-preview rounded rounded-3 overflow-hidden">
+                                <div class="swiper card-images">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="room-info pt-2 pb-0 px-1 mb-0">
+                                <div class="d-flex justify-content-between align-items-center pb-0 mb-0">
+                                    <h4 class="room-title mb-0">San Salvatore Monferrato, Italia</h4>
+                                    <p class="room-rating mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        4.9
+                                    </p>
+                                </div>
+                                <p class="room-host mb-0">Host: Mauro</p>
+                                <p class="room-book-dates mb-2">31 gen - 05 feb</p>
+                                <p class="price fw-bold">188 € notte</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="room-card">
+                            <div class="room-preview rounded rounded-3 overflow-hidden">
+                                <div class="swiper card-images">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="room-info pt-2 pb-0 px-1 mb-0">
+                                <div class="d-flex justify-content-between align-items-center pb-0 mb-0">
+                                    <h4 class="room-title mb-0">San Salvatore Monferrato, Italia</h4>
+                                    <p class="room-rating mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        4.9
+                                    </p>
+                                </div>
+                                <p class="room-host mb-0">Host: Mauro</p>
+                                <p class="room-book-dates mb-2">31 gen - 05 feb</p>
+                                <p class="price fw-bold">188 € notte</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="room-card">
+                            <div class="room-preview rounded rounded-3 overflow-hidden">
+                                <div class="swiper card-images">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="room-info pt-2 pb-0 px-1 mb-0">
+                                <div class="d-flex justify-content-between align-items-center pb-0 mb-0">
+                                    <h4 class="room-title mb-0">San Salvatore Monferrato, Italia</h4>
+                                    <p class="room-rating mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        4.9
+                                    </p>
+                                </div>
+                                <p class="room-host mb-0">Host: Mauro</p>
+                                <p class="room-book-dates mb-2">31 gen - 05 feb</p>
+                                <p class="price fw-bold">188 € notte</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="room-card">
+                            <div class="room-preview rounded rounded-3 overflow-hidden">
+                                <div class="swiper card-images">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="room-info pt-2 pb-0 px-1 mb-0">
+                                <div class="d-flex justify-content-between align-items-center pb-0 mb-0">
+                                    <h4 class="room-title mb-0">San Salvatore Monferrato, Italia</h4>
+                                    <p class="room-rating mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        4.9
+                                    </p>
+                                </div>
+                                <p class="room-host mb-0">Host: Mauro</p>
+                                <p class="room-book-dates mb-2">31 gen - 05 feb</p>
+                                <p class="price fw-bold">188 € notte</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="room-card">
+                            <div class="room-preview rounded rounded-3 overflow-hidden">
+                                <div class="swiper card-images">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="img-fluid" src="https://a0.muscache.com/im/pictures/7a3f8fa1-ed44-4087-9c41-803d5aae92d8.jpg?im_w=1200&im_format=avif" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="room-info pt-2 pb-0 px-1 mb-0">
+                                <div class="d-flex justify-content-between align-items-center pb-0 mb-0">
+                                    <h4 class="room-title mb-0">San Salvatore Monferrato, Italia</h4>
+                                    <p class="room-rating mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        4.9
+                                    </p>
+                                </div>
+                                <p class="room-host mb-0">Host: Mauro</p>
+                                <p class="room-book-dates mb-2">31 gen - 05 feb</p>
+                                <p class="price fw-bold">188 € notte</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
@@ -56,6 +610,7 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

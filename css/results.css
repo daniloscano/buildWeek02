@@ -2,8 +2,8 @@
 
 body {
     background-color: #ffffff;
+    padding: 0 2rem;
 }
-
 
 .logo {
     width: 120px;
@@ -24,6 +24,7 @@ body {
 .search-info {
     border: 0.5px solid #cbcbcb;
     border-radius: 50px;
+    height: 60px;
 }
 
 .bi-list {
@@ -44,10 +45,38 @@ body {
     color: #6a6a6a;
 }
 
-.search-btn {
-    width: 48px;
-    height: 48px;
+.bi-search {
+    background-color: #ff385c;
+    padding: 10px;
     border: none;
     border-radius: 50%;
-    background-color: red;
+    cursor: pointer;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.banner-icon {
+    font-size: 28px;
+}
+
+.swiper-slide p {
+    font-size: 14px;
+}
+
+#banner-filter {
+    border: solid 1px #cbcbcb;
+    border-radius: 10px;
+}
+
+.room-title {
+    font-size: 16px;
+}
+
+.room-rating {
+    font-size: 14px;
+}
+
+.room-host, .room-book-dates {
+    font-size: 14px;
+    color:#6a6a6a;
 }

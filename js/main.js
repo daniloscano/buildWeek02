@@ -2,7 +2,7 @@ const rooms = [
     {
         location: "San martino in badia italy",
         host: "azienda specializzata",
-        bookingDate: '14-19 marz',
+        bookingDate: '14-19 marzo',
         pricePerNight: '336€',
         roomRating: '5.0',
         title: 'Chalet Milandura con servizio ski shuttle',
@@ -925,3 +925,57 @@ const rooms = [
         policy: "Rimborso del 50% se cancellato entro 3 giorni dall'arrivo.",
     },
 ];
+
+// init swiper => banner \\
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 3,
+        },
+        480: {
+            slidesPerView: 5,
+        },
+        640: {
+            slidesPerView: 6,
+        },
+        1200: {
+            slidesPerView: 10,
+        }
+    },
+});
+
+// init swiper => room-images \\
+const cardImagesSwiper = new Swiper('.swiper.card-images', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+const roomsContainer = document.querySelector('.rooms-container');
+
+rooms.forEach(room => {
+    
+})
+
+
+
+const createCardImages = (room) => {
+    room.images.forEach(image => {
+        const roomImg = document.createElement('img');
+        roomImg.classList.add('img-fluid');
+        roomImg.src = image.src;
+        roomImg.alt = image.alt;
+
+        
+    })
+}
