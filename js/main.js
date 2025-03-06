@@ -8,7 +8,7 @@ const rooms = [
         title: 'Chalet Milandura con servizio ski shuttle',
         roomType: 'Intero alloggio: casa',
         roomDesc: '6 ospiti,2 camere da letto,3 letti,2 bagni',
-        host: {
+        hostDetails: {
             name: 'Ilaria E Alex',
             hostDesc: 'Superhost, 7 anni da host',
             languange: "inglese,tedesco e italiano",
@@ -141,7 +141,7 @@ const rooms = [
         title: "Chalet di Lusso con Vista Dolomiti",
         roomType: "Intero alloggio: chalet",
         roomDesc: "8 ospiti, 3 camere da letto, 4 letti, 3 bagni",
-        host: {
+        hostDetails: {
             name: "Giovanni e Maria",
             hostDesc: "Superhost, 5 anni da host",
             languange: "italiano, inglese",
@@ -273,7 +273,7 @@ const rooms = [
         title: "Appartamento con Vista Piste da Sci",
         roomType: "Intero alloggio: appartamento",
         roomDesc: "4 ospiti, 2 camere da letto, 2 letti, 1 bagno",
-        host: {
+        hostDetails: {
             name: "Marco e Laura",
             hostDesc: "Superhost, 6 anni da host",
             languange: "italiano, inglese, tedesco",
@@ -405,7 +405,7 @@ const rooms = [
         title: "Chalet di Charme con Sauna e Vista",
         roomType: "Intero alloggio: chalet",
         roomDesc: "6 ospiti, 3 camere da letto, 3 letti, 2 bagni",
-        host: {
+        hostDetails: {
             name: "Elisa e Federico",
             hostDesc: "Superhost, 4 anni da host",
             languange: "italiano, inglese",
@@ -537,7 +537,7 @@ const rooms = [
         title: "Appartamento Panoramico con Terrazza e SPA",
         roomType: "Intero alloggio: appartamento",
         roomDesc: "5 ospiti, 2 camere da letto, 3 letti, 2 bagni",
-        host: {
+        hostDetails: {
             name: "Andrea e Martina",
             hostDesc: "Superhost, 8 anni da host",
             languange: "italiano, inglese, francese",
@@ -669,7 +669,7 @@ const rooms = [
         title: "Chalet Esclusivo con Camino e Palestra Privata",
         roomType: "Intero alloggio: chalet",
         roomDesc: "6 ospiti, 3 camere da letto, 3 letti, 3 bagni",
-        host: {
+        hostDetails: {
             name: "Francesco e Giulia",
             hostDesc: "Superhost, 6 anni da host",
             languange: "italiano, inglese, spagnolo",
@@ -801,7 +801,7 @@ const rooms = [
         title: "Appartamento Rustico con Vista Montagne",
         roomType: "Intero alloggio: appartamento",
         roomDesc: "4 ospiti, 2 camere da letto, 2 letti, 1 bagno",
-        host: {
+        hostDetails: {
             name: "Luca e Sara",
             hostDesc: "Superhost, 5 anni da host",
             languange: "italiano, tedesco, inglese",
@@ -949,33 +949,120 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-// init swiper => room-images \\
-const cardImagesSwiper = new Swiper('.swiper.card-images', {
-    loop: true,
-    pagination: {
-        el: '.swiper-pagination',
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
+
 
 const roomsContainer = document.querySelector('.rooms-container');
 
-rooms.forEach(room => {
-    
-})
+// OK \\ createCardImages => immagini + slide
 
+const createCardImages = (data) => {
+    const swiperWrapper = document.createElement('div');
+    swiperWrapper.classList.add('swiper-wrapper');
 
-
-const createCardImages = (room) => {
-    room.images.forEach(image => {
+    data.images.forEach(image => {
         const roomImg = document.createElement('img');
         roomImg.classList.add('img-fluid');
         roomImg.src = image.src;
         roomImg.alt = image.alt;
 
-        
-    })
-}
+        const swiperSlide = document.createElement('div');
+        swiperSlide.classList.add('swiper-slide');
+
+        swiperSlide.appendChild(roomImg);
+        swiperWrapper.appendChild(swiperSlide);
+    });
+
+    return swiperWrapper;
+};
+
+// createSwiperWrapper => slide + pagination + button
+const createSwiper = (data, images, id) => {
+    const swiperContainer = document.createElement('div');
+    swiperContainer.classList.add('swiper', `card-images-${id}`,'rounded','rounded-3', 'overflow-hidden');
+
+    const swiperPagination = document.createElement('div');
+    swiperPagination.classList.add('swiper-pagination');
+    swiperPagination.id = `swiper-pagination-${id}`;
+
+    const swiperBtnPrev = document.createElement('div');
+    swiperBtnPrev.classList.add('swiper-button-prev', `swiper-button-prev-${id}`);
+    swiperBtnPrev.id = `swiper-button-prev-${id}`;
+
+    const swiperBtnNext = document.createElement('div');
+    swiperBtnNext.classList.add('swiper-button-next');
+    swiperBtnNext.id = `swiper-button-next-${id}`;
+
+    swiperContainer.append(images, swiperPagination, swiperBtnPrev, swiperBtnNext);
+
+    return swiperContainer;
+};
+
+const createRoomInfo = (data) => {
+    const roomInfoContainer = document.createElement('div');
+    roomInfoContainer.classList.add('room-info', 'pt-2', 'pb-0', 'px-1', 'mb-0');
+
+    const roomInfoContent = document.createElement('div');
+    roomInfoContent.classList.add('d-flex', 'justify-content-between', 'align-items-center', 'pb-0', 'mb-0');
+
+    const roomTitle = document.createElement('h4');
+    roomTitle.classList.add('room-title', 'mb-0');
+    roomTitle.innerText = data.location;
+
+    const roomRating = document.createElement('p');
+    roomRating.classList.add('room-rating' ,'mb-0');
+    roomRating.innerHTML = `<i class="bi bi-star-fill"></i> ${data.roomRating}`;
+
+    roomInfoContent.append(roomTitle, roomRating);
+
+    const roomHost = document.createElement('p');
+    roomHost.classList.add('room-host', 'mb-0');
+    roomHost.innerText = `Host: ${data.host}`;
+
+    const roomBookDates = document.createElement('p');
+    roomBookDates.classList.add('room-book-dates', 'mb-2');
+    roomBookDates.innerText = data.bookingDate;
+
+    const roomPricePerNight = document.createElement('p');
+    roomPricePerNight.classList.add('price', 'fw-bold');
+    roomPricePerNight.innerText = `${data.pricePerNight} € notte`;
+
+    roomInfoContainer.append(roomInfoContent, roomHost, roomBookDates, roomPricePerNight);
+
+    return roomInfoContainer;
+};
+
+const createRoomCard = (imgSwiper, info, id) => {
+    const roomCard = document.createElement('div');
+    roomCard.classList.add('col-12', 'col-md-6', 'col-lg-3', 'room-card');
+
+    const roomID = document.createElement('input');
+    roomID.type = 'hidden';
+    roomID.name = 'room-id';
+    roomID.value = id;
+
+    roomCard.append(imgSwiper, info, roomID);
+
+    return roomCard;
+};
+
+
+rooms.forEach(room => {
+    let id = rooms.indexOf(room);
+    const cardImages = createCardImages(room);
+    const imagesSwiper = createSwiper(room, cardImages, id);
+    const cardInfo = createRoomInfo(room);
+    const card = createRoomCard(imagesSwiper, cardInfo, id);
+
+    roomsContainer.appendChild(card);
+
+    const cardImagesSwiper = new Swiper(`.card-images-${id}`, {
+        //loop: true,
+        pagination: {
+            el: `#swiper-pagination-${id}`,
+        },    
+        navigation: {
+            nextEl: `#swiper-button-next-${id}`,
+            prevEl: `#swiper-button-prev-${id}`,
+        },
+    });
+});
