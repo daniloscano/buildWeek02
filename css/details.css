@@ -1,82 +1,83 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 body {
-    background-color: #ffffff;
-    padding: 0 2rem;
+  background-color: #ffffff;
+  padding: 0 2rem;
 }
 
 .logo {
-    width: 120px;
+  width: 120px;
 }
 
 .nav-btn {
-    background-color: #ffffff;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .nav-btn:hover {
-    background-color: #cbcbcb;
+  background-color: #cbcbcb;
 }
 
 .search-info {
-    border: 0.5px solid #cbcbcb;
-    border-radius: 50px;
-    height: 60px;
+  border: 0.5px solid #cbcbcb;
+  border-radius: 50px;
+  height: 60px;
 }
 
 .bi-list {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 .bi-globe {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .profile {
-    border: 0.5px solid #cbcbcb;
-    border-radius: 50px;
+  border: 0.5px solid #cbcbcb;
+  border-radius: 50px;
 }
 
 .bi-person-circle {
-    font-size: 32px;
-    color: #6a6a6a;
+  font-size: 32px;
+  color: #6a6a6a;
 }
 
 .bi-search {
-    background-color: #ff385c;
-    padding: 10px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-weight: 900;
-    color: #ffffff;
+  background-color: #ff385c;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 900;
+  color: #ffffff;
 }
 
 .banner-icon {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .swiper-slide p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 #banner-filter {
-    border: solid 1px #cbcbcb;
-    border-radius: 10px;
+  border: solid 1px #cbcbcb;
+  border-radius: 10px;
 }
 
 .room-title {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .room-rating {
-    font-size: 14px;
+  font-size: 14px;
 }
 
-.room-host, .room-book-dates {
-    font-size: 14px;
-    color:#6a6a6a;
+.room-host,
+.room-book-dates {
+  font-size: 14px;
+  color: #6a6a6a;
 }
