@@ -41,43 +41,41 @@
 
 .custom-icon {
   font-size: 20px;
-  color: var(--redBnb)
+  color: var(--redBnb);
 }
 
-main h2{
+main h2 {
   font-size: 44px;
   font-weight: 800;
 }
 
 @media (max-width: 1024px) {
-  main h2{
+  main h2 {
     width: 50%;
   }
 
-  .aribnb-p-container{
+  .aribnb-p-container {
     font-size: 14px;
     text-align: center;
     width: 210px;
   }
 
-  .btn-airbnb-start{
+  .btn-airbnb-start {
     border-radius: 20px !important;
     padding: 10px 80px 10px 80px !important;
   }
-
 }
 
 @media (max-width: 780px) {
-  main h2{
+  main h2 {
     width: 75%;
   }
 
-  .aribnb-p-container{
+  .aribnb-p-container {
     font-size: 14px;
     text-align: center;
     width: 210px;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -94,24 +92,24 @@ main h2{
     font-size: 35px;
   }
 
-  main h2{
+  main h2 {
     font-size: 32px;
     width: 100%;
   }
 
-  .img-container{
+  .img-container {
     position: relative;
     width: 100%;
     height: fit-content;
   }
-  .custom-img{
+  .custom-img {
     position: absolute;
     top: 0;
     left: 0;
     clip: rect(200px 200px 200px 200px);
   }
 
-  .aribnb-p-container{
+  .aribnb-p-container {
     font-size: 16px;
     text-align: start;
     width: 100%;
@@ -125,41 +123,68 @@ main h2{
   }
 }
 
-.aribnb-start{
+.aribnb-start {
   width: 48px;
   height: 48px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   border-radius: 10px;
 }
 
-.aribnb-p-container{
+.aribnb-p-container {
   height: 48px;
+}
+
+.air-custom {
+  color: var(--redBnb);
+}
+
+.icon {
+  color: var(--green);
+  text-align: center;
+}
+
+.accordion-item {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.btn-custom-end {
+  width: 200px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: transparent;
 }
 
 footer {
   font-size: 14px;
 }
 
-footer h3{
+footer h3 {
   color: #222;
   font-size: 14px;
 }
 
-footer a{
+footer a {
   text-decoration: none;
   color: #222;
 }
 
-footer li{
+footer li {
   list-style: none;
 }
 
-.footer-section::before{
+.footer-section::before {
   content: "";
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   display: flex;
   margin-bottom: 20px;
 }
+
 
 .footer-info-center::after {
   content: "";
