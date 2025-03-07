@@ -952,6 +952,7 @@ const swiper = new Swiper('.swiper', {
 
 
 const roomsContainer = document.querySelector('.rooms-container');
+const triggeredRoomId = document.querySelector('#room-id');
 
 // OK \\ createCardImages => immagini + slide
 
@@ -1038,6 +1039,7 @@ const createRoomCard = (imgSwiper, info, id) => {
     const roomID = document.createElement('input');
     roomID.type = 'hidden';
     roomID.name = 'room-id';
+    roomID.id = 'room-id';
     roomID.value = id;
 
     roomCard.append(imgSwiper, info, roomID);
@@ -1064,5 +1066,19 @@ rooms.forEach(room => {
             nextEl: `#swiper-button-next-${id}`,
             prevEl: `#swiper-button-prev-${id}`,
         },
+    });
+});
+
+const solutions = document.querySelectorAll('.room-card');
+
+solutions.forEach(solution => {
+    solution.addEventListener('click', (event) => {
+        const isClickInsideRoomInfo = event.target.className.includes('room-');
+        
+        if (isClickInsideRoomInfo) {
+            const indexToCreate = solution.lastElementChild.value;
+
+            window.location.href = `./details.html?id=${indexToCreate}`;
+        };        
     });
 });
