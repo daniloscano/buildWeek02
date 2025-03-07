@@ -146,6 +146,13 @@ main h2 {
   border: none !important;
 }
 
+.btn-custom-end {
+  width: 200px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: transparent;
+}
+
 footer {
   font-size: 14px;
 }
