@@ -92,3 +92,37 @@ body {
   padding: 16px 0;
   border-radius: 20px;
 }
+
+.host-preview-img {
+  width: 64px;
+  border-radius: 50%;
+}
+
+.host-preview-info p {
+  font-size: 18px;
+}
+
+.host-service-details ion-icon {
+  font-size: 30px;
+}
+
+.translated-info {
+  background-color: #f7f7f7;
+}
+
+.room-space-static {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal-dialog {
+  width: 70%;
+  margin: 10rem auto;
+}
+
+.service-icon {
+  font-size: 30px;
+}

@@ -18,10 +18,9 @@
   </head>
 
   <body>
+
     <nav class="mb-3 border-bottom">
-      <div
-        class="container d-flex justify-content-between align-items-center p-4"
-      >
+      <div class="container d-flex justify-content-between align-items-center p-4">
         <div>
           <img src="./assets/airbnb-logo.png" alt="airbnb-logo" class="logo" />
         </div>
@@ -45,10 +44,11 @@
         </div>
       </div>
     </nav>
+
     <header>
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2 class="details-title"></h2>
+          <h2 class="details-title py-2"></h2>
           <div>
             <a class="text-decoration-none text-black" href="">
               <ion-icon name="share-outline"></ion-icon>
@@ -60,7 +60,7 @@
             </a>
           </div>
         </div>
-        <div class="row gy-1">
+        <div class="row gy-1 rounded rounded-5 overflow-hidden">
           <div class="col-12 col-md-6 px-1">
             <div class="ratio ratio-1x1">
               <img
@@ -115,20 +115,21 @@
     </header>
 
     <main>
+
       <section>
         <div class="container">
           <div class="row">
-            <div class="col-7 py-3">
+            <div class="col-8 py-3">
               <h3 class="lh-1 room-type"></h3>
               <p class="lh-1 room-desc"></p>
-              <div class="row d-flex custom-row justify-content-between">
+              <div class="row d-flex custom-row justify-content-between align-items-center px-3 mb-3">
                 <div class="col-3"><h3>Amato dagli ospiti</h3></div>
-                <div class="col-3">
+                <div class="col-5">
                   <h5>Uno degli alloggi più amato dagli ospiti di AirBnb</h5>
                 </div>
-                <div class="col-3 d-flex gap-3">
+                <div class="col-2 d-flex gap-3">
                   <div class="d-flex flex-column align-items-center">
-                    <h5>4.91</h5>
+                    <h5 class="mb-0">4.91</h5>
                     <div class="d-flex">
                       <ion-icon name="star"></ion-icon>
                       <ion-icon name="star"></ion-icon>
@@ -139,23 +140,113 @@
                   </div>
                   
                 </div>
-                <div class="col-3"><div class="d-flex  flex-column align-items-center justify-content-center"></div>
-                    <h5 class="lh-1">311</h5>
+                <div class="col-2">
+                  <div class="d-flex  flex-column align-items-center justify-content-center">
+                    <h5 class="lh-1 mb-0 text-center">311</h5>
                     <a class="lh-1 text-black" href="#"> recensioni </a>
-                  </div></div>
+                  </div>
+                </div>
               </div>
-              <div class="col-5">
+              <div class="host-preview d-flex align-items-center gap-4 py-3 border-bottom">
+                <img class="host-preview-img" src="https://a0.muscache.com/im/pictures/user/14362bd8-0947-449d-94c9-bcc52a6d2153.jpg" alt="">
+                <div class="host-preview-info d-flex flex-column justify-content-center gap-0">
+                  <p class="host-preview-name fw-bold mb-0"></p>
+                  <p class="host-preview-desc fs-small fw-light mb-0"></p>
+                </div>
+              </div>
+              <div class="host-services border-bottom">
+                <div class="host-service-details px-3 my-4">
+                  <div class="row">
+                    <div class="col-1">
+                      <ion-icon class="host-service-icon" name="umbrella-outline"></ion-icon>
+                    </div>
+                    <div class="col-11">
+                      <p class="host-service-name fs-5 fw-bold mb-0">Tuffati</p>
+                      <p class="host-service-desc fs-6 fw-light mb-0">Questo è uno dei pochi alloggi in zona dotati di piscina.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="host-service-details px-3 mb-4">
+                  <div class="row">
+                    <div class="col-1">
+                      <ion-icon class="host-service-icon" name="key-outline"></ion-icon>
+                    </div>
+                    <div class="col-11">
+                      <p class="host-service-name fs-5 fw-bold mb-0">Esperienza di check-in eccezionale</p>
+                      <p class="host-service-desc fs-6 fw-light mb-0">
+                        Gli ospiti che hanno soggiornato qui di recente hanno valutato la procedura di check-in con 5 stelle.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="host-service-details px-3 mb-4">
+                  <div class="row">
+                    <div class="col-1">
+                      <ion-icon class="host-service-icon" name="calendar-clear-outline"></ion-icon>
+                    </div>
+                    <div class="col-11">
+                      <p class="host-service-name fs-5 fw-bold mb-0">Cancellazione gratuita entro il giorno 6 gen</p>
+                      <p class="host-service-desc fs-6 fw-light mb-0">Se dovessi cambiare idea, riceverai un rimborso totale.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="translated-info p-4 my-4 rounded rounded-4">
+                <p class="m-0">Alcune informazioni sono state tradotte automaticamente.</p>
+                <p class="m-0"><a href="#">Mostra il testo nella lingua originale</a></p>
+              </div>
+              <div class="room-info-static p-4 border-bottom">
+                <p class="fw-bold mb-1">Lo Spazio</p>
+                <p class="room-space-static mb-4"></p>
                 
+                <a type="button" data-bs-toggle="modal" data-bs-target="#info-modal">
+                  Mostra altro >
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="info-modal" tabindex="-1" aria-labelledby="info-modal" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <p class="room-description mb-4"></p>
+                        <p class="fw-bold mb-1">Lo Spazio</p>
+                        <p class="room-space mb-4"></p>
+                        <p class="fw-bold mb-1">Gli ospiti dicono...</p>
+                        <p class="room-guest mb-4"></p>
+                        <p class="fw-bold mb-1">Informazioni aggiuntive</p>
+                        <p class="room-extra-info mb-4"></p>
+                        <p class="fw-bold mb-1">Registration Number</p>
+                        <p class="room-id-number mb-4"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
+              <div class="services pb-3 border-bottom">
+                <h4 class="fw-bold my-3">Cosa troverai</h4>
+                <div class="row services-content gy-3 mb-4">
+                  
+                </div>
+                <button class="btn btn-outline-dark mb-3">
+                  Mostra tuti e 16 i servizi
+                </button>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="book-form">
+
+              </div>
+            </div>
                 
 
-            </div>
-            </div>
-            
           </div>
         </div>
-      </section>
-    </main>
+            
+      </div>
+    </div>
+    </section>
+  </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

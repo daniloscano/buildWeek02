@@ -173,11 +173,11 @@ const rooms = [
             },
         ],
         roomInfo: {
-            description: "Chalet di lusso immerso nella natura con sauna e jacuzzi.",
-            space: "Ampio soggiorno, cucina moderna, vista panoramica.",
-            guest: "Accesso a tutto l'alloggio e giardino privato.",
-            extraInfo: "Tassa di soggiorno di €3,00 a notte per adulto.",
-            idNumber: "IT032045B72HLET92P",
+            description: "Prenditi una pausa e rilassati in questa oasi di pace.Immergetevi nel cuore delle Dolomiti,in questo chalet completamente ristrutturato e disponibile dall'estate 2020.Situato nella zona Mirì a San Martino in Badia, lo chalet offre un panorama mozzafiato e tutta la tranquillità che ci si aspetta da una vacanza in montagna.",
+            space: "Lo chalet è una casa indipendente dal classico stile alpino, ottimo per chi voglia godersi un po' di privacy e tranquillità .Per 2/6 persone.La casa è composta da cucina accessoriata, due camere da letto con letto matrimoniale,salotto con divano letto e televisione, due bagni completi e un balcone con vista. Parcheggio privato e tanto spazio all'aperto a disposizione.Lenzuola, asciugamani e tutti gli accessori per cucinare saranno già presenti nell'alloggio.Inoltre la struttura dispone di una biosauna, una sauna ad infrarossi ed una vasca idromassaggio esterna con vista sulle Dolomiti.",
+            guest: " Tutto il giardino circostante e gli spazi esterni posso essere utilizzati. All'esterno è presente anche una griglia ed un braciere per accendere il fuoco.",
+            extraInfo: "Ai prezzi indicati va aggiunta la somma di €2,60 dell’imposta di soggiorno, a notte a persona (a partire dai 14 anni) da versare sul posto all'arrivo in contanti.",
+            idNumber: "IT021082B59GLET92P",
         },
         services: [
             {
@@ -305,11 +305,11 @@ const rooms = [
             },
         ],
         roomInfo: {
-            description: "Appartamento moderno vicino alle piste, perfetto per sciatori.",
-            space: "Cucina attrezzata, soggiorno spazioso, balcone con vista.",
-            guest: "Uso esclusivo dell'appartamento, deposito sci disponibile.",
-            extraInfo: "La tassa di soggiorno di €2,50 a notte per adulto è esclusa.",
-            idNumber: "IT045128C85HLET12Q",
+            description: "Prenditi una pausa e rilassati in questa oasi di pace.Immergetevi nel cuore delle Dolomiti,in questo chalet completamente ristrutturato e disponibile dall'estate 2020.Situato nella zona Mirì a San Martino in Badia, lo chalet offre un panorama mozzafiato e tutta la tranquillità che ci si aspetta da una vacanza in montagna.",
+            space: "Lo chalet è una casa indipendente dal classico stile alpino, ottimo per chi voglia godersi un po' di privacy e tranquillità .Per 2/6 persone.La casa è composta da cucina accessoriata, due camere da letto con letto matrimoniale,salotto con divano letto e televisione, due bagni completi e un balcone con vista. Parcheggio privato e tanto spazio all'aperto a disposizione.Lenzuola, asciugamani e tutti gli accessori per cucinare saranno già presenti nell'alloggio.Inoltre la struttura dispone di una biosauna, una sauna ad infrarossi ed una vasca idromassaggio esterna con vista sulle Dolomiti.",
+            guest: " Tutto il giardino circostante e gli spazi esterni posso essere utilizzati. All'esterno è presente anche una griglia ed un braciere per accendere il fuoco.",
+            extraInfo: "Ai prezzi indicati va aggiunta la somma di €2,60 dell’imposta di soggiorno, a notte a persona (a partire dai 14 anni) da versare sul posto all'arrivo in contanti.",
+            idNumber: "IT021082B59GLET92P",
         },
         services: [
             {
